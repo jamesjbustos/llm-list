@@ -36,7 +36,7 @@ https://github.com/jamesjbustos/llm-list/assets/45052719/dc43f3f2-db81-41bb-a4f6
 
 ## Notes
 
-Not realted to the app as much but got sick the week of my project so was hard to finish on time. Otherwise, the project went smooth and the lab helped a lot in getting me started, thank you.
+Not related to the app but got sick the week of my project so was hard to finish on time. Otherwise, the project went smooth and the lab helped a lot in getting me started, thank you.
 
 ## License
 
