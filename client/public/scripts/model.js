@@ -13,13 +13,11 @@ const renderModel = async () => {
   if (model) {
     document.getElementById("image").src = model.image_url;
     document.getElementById("name").textContent = model.name;
-    document.getElementById("org").textContent =
-      "Organization: " + model.organization;
-    document.getElementById("dataSize").textContent =
-      "Data Size: " + model.data_size;
-    document.getElementById("releaseDate").textContent =
-      "Release Date: " + model.release_date;
-    document.getElementById("description").textContent = model.capabilities;
+    document.getElementById("org").textContent = model.organization;
+    document.getElementById("model_Size").textContent = model.model_size;
+    document.getElementById("type").textContent = model.type;
+    document.getElementById("capabilities").textContent = model.capabilities;
+    document.getElementById("release_date").textContent = model.release_date;
     document.title = `AI Model - ${model.name}`;
   } else {
     const message = document.createElement("h2");

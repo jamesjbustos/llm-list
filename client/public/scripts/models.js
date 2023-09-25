@@ -6,40 +6,33 @@ const renderModels = async () => {
 
   if (data && data.length) {
     data.forEach((model) => {
-      const card = document.createElement("div");
-      card.classList.add("card");
+      const cardLink = document.createElement("a");
+      cardLink.href = `/models/${model.id}`;
+      cardLink.classList.add("card");
 
-      const topContainer = document.createElement("div");
-      topContainer.classList.add("top-container");
+      const img = document.createElement("img");
+      img.src = model.image_url;
+      img.alt = model.name;
+      cardLink.appendChild(img);
 
       const bottomContainer = document.createElement("div");
       bottomContainer.classList.add("bottom-container");
-
-      topContainer.style.backgroundImage = `url(${model.image_url})`;
 
       const name = document.createElement("h3");
       name.textContent = model.name;
       bottomContainer.appendChild(name);
 
       const dataSize = document.createElement("p");
-      dataSize.textContent = "Data Size: " + model.data_size;
+      dataSize.textContent = "Model Size: " + model.model_size;
       bottomContainer.appendChild(dataSize);
 
       const capabilities = document.createElement("p");
-      capabilities.textContent = "Capabilities: " + model.capabilities;
+      capabilities.textContent = model.desc;
       bottomContainer.appendChild(capabilities);
 
-      const link = document.createElement("a");
-      link.textContent = "Learn More >";
-      link.setAttribute("role", "button");
-      link.href = `/models/${model.id}`;
-      link.classList.add("read-more-link");
-      bottomContainer.appendChild(link);
+      cardLink.appendChild(bottomContainer);
 
-      card.appendChild(topContainer);
-      card.appendChild(bottomContainer);
-
-      modelsList.appendChild(card);
+      modelsList.appendChild(cardLink);
     });
   } else {
     const errorMessage = document.createElement("p");
