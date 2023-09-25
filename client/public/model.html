@@ -9,22 +9,39 @@
 
     <script defer src="/scripts/header.js"></script>
     <script defer src="/scripts/model.js"></script>
+    <script defer src="/scripts/footer.js"></script>
   </head>
+
   <body>
     <header></header>
     <main id="model-content" class="model-info">
       <div class="image-container">
         <img id="image" src="" alt="" />
+      </div>
+      <div class="model-details">
+        <h2 id="name"></h2>
 
-        <div class="model-details">
-          <h2 id="name"></h2>
+        <h3>Type</h3>
+        <hr />
+        <p id="type"></p>
 
-          <p id="org"></p>
-          <p id="dataSize"></p>
-          <p id="releaseDate"></p>
-          <p id="description"></p>
-        </div>
+        <h3>Capabilities</h3>
+        <hr />
+        <p id="capabilities"></p>
+
+        <h3>Model Size</h3>
+        <hr />
+        <p id="model_Size"></p>
+
+        <h3>Organization</h3>
+        <hr />
+        <p id="org"></p>
+
+        <h3>Release Date</h3>
+        <hr />
+        <p id="release_date"></p>
       </div>
     </main>
+    <footer></footer>
   </body>
 </html>
