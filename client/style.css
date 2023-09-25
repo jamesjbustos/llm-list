@@ -1,8 +1,7 @@
-/* Root Styles CSS */
+/* Root css */
 :root {
-  background-color: rgb(18, 18, 21);
+  background-color: #000;
   font-family: "Inter", sans-serif;
-  color: white;
 }
 
 html,
@@ -11,165 +10,192 @@ body {
   padding: 0;
   width: 100%;
   overflow-x: hidden;
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
 }
 
-/* Header CSS */
+/* Home page */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Nav header */
 .header-container {
   width: 100%;
+  background-color: #000;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   height: 65px;
-  padding: 0 35px;
-  border-bottom: 1px solid rgb(42, 42, 42);
-  margin-bottom: 45px;
+  padding: 24px 32px;
+}
+@media only screen and (max-width: 768px) {
+  .header-container {
+    padding: 24px;
+  }
 }
 
-.header-left {
+.logo-title-container {
   display: flex;
   align-items: center;
+  gap: 0.25rem;
 }
 
-.header-left a {
+.header-container a {
   display: inline-block;
   border: none;
-  color: inherit;
+  color: white;
   text-decoration: none;
-  margin-right: 10px;
+  margin-right: 0.5rem;
 }
 
-.header-left img {
-  height: 35px;
+.header-container img {
+  height: 32px;
   cursor: pointer;
 }
 
-.header-left h1 {
-  color: #f3f4f6;
-  text-decoration: none;
-  text-transform: lowercase;
-  font-weight: 800;
-  font-size: 1.1em;
+.header-container h1 {
+  color: white;
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 
-.header-right ul {
+.header-container ul {
   padding: 0;
+  display: flex;
+  gap: 1rem;
 }
 
-.header-right ul li {
+.header-container ul li {
   list-style-type: none;
-  display: inline;
-  margin-left: 20px;
 }
 
-.header-right ul li a {
+.header-container ul li a {
   text-decoration: none;
-  font-size: 0.9em;
+  font-size: 0.9rem;
+  font-weight: 500;
   cursor: pointer;
-  padding: 5px 10px;
+  color: black;
+  transition: color 0.3s ease;
 }
 
-/* Styling for Home button */
 .home-link {
-  font-weight: bold;
-  background-color: white;
-  color: black;
+  font-weight: 700;
+  background-color: #fff;
+  color: #1f2937;
   border: 2px solid white;
   border-radius: 0.4rem;
-  padding: 5px 10px;
+  padding: 0.3rem 1rem;
 }
 
-/* Main page heading */
-
+/* Hero */
 .header-info {
   font-size: 24px;
   text-align: center;
   width: 100%;
+  padding-top: 5px;
+  max-width: 80rem;
+  margin: 0 auto;
 }
 
-.header-info h2,
-.header-info p {
-  margin-bottom: 15px;
+.header-info h1 {
+  color: #fff;
 }
 
 .header-info p {
   font-size: 18px;
   color: rgb(161, 161, 170);
+  margin-bottom: 15px;
 }
 
-/* Home page CSS */
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+@media only screen and (max-width: 768px) {
+  .header-info {
+    font-size: 18px;
+    padding-top: 15px;
+  }
+
+  .header-info h1 {
+    font-size: 22px;
+    padding-top: 16px;
+  }
+
+  .header-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
 }
 
+/* Model list */
 #models-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  max-width: 80rem;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
 }
 
-/* Card */
+@media (min-width: 640px) {
+  #models-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  #models-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 .card {
-  width: calc(33% - 60px);
-  height: 340px;
-  background: transparent;
-  border-style: solid;
-  border-width: 2px;
-  border-color: rgb(51, 51, 56);
-  border-radius: 0.3rem;
-  margin: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 170px;
+  background-color: #111;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid rgb(51, 51, 56);
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.card img {
-  height: 100%;
-}
-
-.top-container {
-  background-size: 100px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 200px;
-}
-
-.bottom-container {
-  padding: 10px;
-  overflow: hidden;
-  height: 140px;
-  border-top: 1px solid rgb(42, 42, 42);
+.card:hover {
+  border-color: #d1d5db;
 }
 
 .bottom-container h3 {
-  margin-top: 10px;
-  margin-bottom: 6px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fafafa;
 }
 
 .bottom-container p {
-  margin: 2px;
+  font-size: 16px;
+  color: #f5f5f5;
+  width: 20rem;
+  margin-top: auto;
 }
 
-.read-more-link {
-  font-weight: bold;
-  background-color: white;
-  color: black;
-  border: 2px solid white;
+.card img {
+  width: 45px;
+  height: 45px;
   border-radius: 0.4rem;
-  padding: 5px 10px;
-  transition: background-color 0.3s ease;
-  display: inline-block;
 }
 
-.read-more-link:hover {
-  background-color: rgba(243, 244, 246, 0.8);
-  color: black;
-}
-
-/* 404 Page CSS */
+/* 404 page */
 .fof-container {
   display: table;
   width: 100%;
@@ -184,11 +210,15 @@ main {
 }
 
 .fof h1 {
-  color: rgb(26, 25, 25);
+  color: white;
   font-size: 50px;
   display: inline-block;
   padding-right: 12px;
   animation: type 0.6s alternate infinite;
+}
+.fof p,
+a {
+  color: white;
 }
 
 @keyframes type {
@@ -200,21 +230,88 @@ main {
   }
 }
 
-/* Detail Page CSS */
+/* Single model page */
 .model-info {
-  display: flex;
-  flex-direction: row;
+  max-width: 900px;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  border-radius: 5px;
+  color: white;
 }
 
 .image-container {
-  padding-left: 100px;
-  width: 40vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .image-container img {
-  width: 80%;
+  max-width: 50px;
+  border-radius: 5px;
+  margin-right: 2rem;
 }
 
-.model-details {
-  width: 45vw;
+.model-details h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.model-details p {
+  font-size: 16px;
+  margin-bottom: 2rem;
+  padding-left: 10px;
+}
+
+.model-details hr {
+  width: 100%;
+  border: 0.5px solid #333;
+  margin: 5px 0;
+}
+
+/* Footer */
+.footer-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: white;
+}
+
+.github-link img {
+  height: 24px;
+  width: 24px;
+}
+
+.copyright-text {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #f3f4f6;
+  margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .copyright-text {
+    margin-top: 0;
+    font-size: 0.75rem;
+  }
 }
