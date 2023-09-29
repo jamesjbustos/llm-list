@@ -32,7 +32,7 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-https://github.com/jamesjbustos/llm-list/assets/45052719/dc43f3f2-db81-41bb-a4f6-79d76cb8efc6
+https://github.com/jamesjbustos/llm-list/assets/45052719/1d8a12ef-e52e-4634-ac6e-d62afaadb619
 
 ## Notes
 
