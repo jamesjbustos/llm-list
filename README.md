@@ -77,7 +77,7 @@ https://github.com/jamesjbustos/llm-list/assets/45052719/6f605b89-6bac-4595-acbf
 
 ## Notes
 
-Never worked with railway before, however, the process was smooth and clear in the instructions.
+Never worked with railway before, however, the process was smooth and clear in the instructions. Everything went okay had some issues with property names that conflicted with keywords. Otherwise, everything went well.
 
 ## License
 
