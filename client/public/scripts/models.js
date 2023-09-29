@@ -27,7 +27,7 @@ const renderModels = async () => {
       bottomContainer.appendChild(dataSize);
 
       const capabilities = document.createElement("p");
-      capabilities.textContent = model.desc;
+      capabilities.textContent = model.description;
       bottomContainer.appendChild(capabilities);
 
       cardLink.appendChild(bottomContainer);
