@@ -2,7 +2,7 @@ const models = [
   {
     id: 1,
     name: "GPT-1",
-    modelSize: "110M",
+    model_size: "110M",
     type: "LLM (Language Model)",
     capabilities:
       "GPT-1 was OpenAI's initial attempt at a language-based model. It was trained on books and other texts, and while it was a significant step forward, it had limitations in generating coherent and contextually relevant text over longer passages.",
@@ -15,7 +15,7 @@ const models = [
   {
     id: 2,
     name: "GPT-2",
-    modelSize: "1.5B",
+    model_size: "1.5B",
     type: "LLM (Language Model)",
     capabilities:
       "GPT-2 showcased improved contextual understanding and was capable of generating more coherent and diverse text over longer passages. However, due to concerns about potential misuse, OpenAI initially withheld the release of the trained model.",
@@ -28,7 +28,7 @@ const models = [
   {
     id: 3,
     name: "GPT-3",
-    modelSize: "175B",
+    model_size: "175B",
     type: "LLM (Language Model)",
     capabilities:
       "GPT-3 made significant advances in contextual and task-based operations. With 175 billion parameters, it could perform tasks without task-specific training data, making it versatile for various applications from translation to content creation.",
@@ -41,7 +41,7 @@ const models = [
   {
     id: 4,
     name: "GPT-4",
-    modelSize: "N/A",
+    model_size: "N/A",
     type: "LLM (Language Model)",
     capabilities:
       "GPT-4, being a more advanced version, likely offers even more sophisticated natural language processing capabilities, understanding context better and generating even more coherent text. Specific details might need further research.",
@@ -54,7 +54,7 @@ const models = [
   {
     id: 5,
     name: "Llama 1",
-    modelSize: "65B",
+    model_size: "65B",
     type: "LLM (Language Model)",
     capabilities:
       "LLaMA (Large Language Model Meta AI) was introduced as a state-of-the-art foundational large language model designed to help researchers advance their work in the AI subfield. It was trained on a large set of unlabeled data, making it ideal for fine-tuning for various tasks. LLaMA is available in several sizes (7B, 13B, 33B, and 65B parameters). The model was trained on 1.4 trillion tokens for the 65B and 33B versions, and the smallest model, LLaMA 7B, was trained on one trillion tokens. It was designed to be versatile and can be applied to many different use cases.",
@@ -68,7 +68,7 @@ const models = [
   {
     id: 6,
     name: "Llama 2",
-    modelSize: "70B",
+    model_size: "70B",
     type: "LLM (Language Model)",
     capabilities:
       "Llama 2 is the next generation of Meta's open-source large language model. It includes pretrained and fine-tuned versions, ranging from 7B to 70B parameters. Llama 2 pretrained models are trained on 2 trillion tokens and have double the context length than Llama 1. Its fine-tuned models have been trained on over 1 million human annotations. Llama 2 outperforms other open-source language models on many benchmarks, including reasoning, coding, proficiency, and knowledge tests. The model also includes specialized versions like Llama Chat and Code Llama, with the latter being trained on 500B tokens of code.",
@@ -82,7 +82,7 @@ const models = [
   {
     id: 7,
     name: "GPT-3.5",
-    modelSize: "175B",
+    model_size: "175B",
     type: "LLM (Language Model)",
     capabilities:
       "GPT-3.5, an advanced version of GPT-3, powers ChatGPT and can handle a series of messages as input, improving interaction with context-aware responses.",
@@ -95,7 +95,7 @@ const models = [
   {
     id: 8,
     name: "PaLM 2 (Bison-001)",
-    modelSize: "340B",
+    model_size: "340B",
     type: "LLM (Language Model)",
     capabilities:
       "Advanced reasoning, code/math processing, classification, question answering, translation (100 languages), natural language generation, and various language tasks.",

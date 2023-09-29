@@ -8,7 +8,7 @@ const createModelsTable = async () => {
     CREATE TABLE IF NOT EXISTS models (
       id SERIAL PRIMARY KEY,
       name VARCHAR(255) NOT NULL,
-      modelSize VARCHAR(20) NOT NULL,
+      model_size VARCHAR(255) NOT NULL,
       type VARCHAR(255) NOT NULL,
       capabilities TEXT NOT NULL,
       description TEXT NOT NULL,
@@ -31,12 +31,12 @@ const seedModelsTable = async () => {
 
   models.forEach((model) => {
     const insertQuery = {
-      text: "INSERT INTO models (name, modelSize, type, capabilities, description, organization, release_date, image_url) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)",
+      text: "INSERT INTO models (name, model_size, type, capabilities, description, organization, release_date, image_url) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)",
     };
 
     const values = [
       model.name,
-      model.modelSize,
+      model.model_size,
       model.type,
       model.capabilities,
       model.description,

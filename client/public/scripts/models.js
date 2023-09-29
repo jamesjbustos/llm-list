@@ -23,7 +23,7 @@ const renderModels = async () => {
       bottomContainer.appendChild(name);
 
       const dataSize = document.createElement("p");
-      dataSize.textContent = "Model Size: " + model.modelSize;
+      dataSize.textContent = "Model Size: " + model.model_size;
       bottomContainer.appendChild(dataSize);
 
       const capabilities = document.createElement("p");

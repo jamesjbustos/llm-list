@@ -14,7 +14,7 @@ const renderModel = async () => {
     document.getElementById("image").src = model.image_url;
     document.getElementById("name").textContent = model.name;
     document.getElementById("org").textContent = model.organization;
-    document.getElementById("modelSize").textContent = model.modelSize;
+    document.getElementById("model_size").textContent = model.model_size;
     document.getElementById("type").textContent = model.type;
     document.getElementById("capabilities").textContent = model.capabilities;
     document.getElementById("release_date").textContent = model.release_date;
