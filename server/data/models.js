@@ -79,6 +79,32 @@ const models = [
     image_url:
       "https://seeklogo.com/images/M/meta-icon-new-facebook-2021-logo-83520C311D-seeklogo.com.png",
   },
+  {
+    id: 7,
+    name: "GPT-3.5",
+    modelSize: "175B",
+    type: "LLM (Language Model)",
+    capabilities:
+      "GPT-3.5, an advanced version of GPT-3, powers ChatGPT and can handle a series of messages as input, improving interaction with context-aware responses.",
+    description:
+      "OpenAI's latest language model enhancing chatbot capabilities.",
+    organization: "OpenAI",
+    release_date: "2022-03-15",
+    image_url: "https://i.imgur.com/WsrSgXf.png",
+  },
+  {
+    id: 8,
+    name: "PaLM 2 (Bison-001)",
+    modelSize: "340B",
+    type: "LLM (Language Model)",
+    capabilities:
+      "Advanced reasoning, code/math processing, classification, question answering, translation (100 languages), natural language generation, and various language tasks.",
+    description: "Google's next-gen LLM built on Pathways AI architecture.",
+    organization: "Google",
+    release_date: "2023-05-01",
+    image_url:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Google_PaLM_Logo.svg/640px-Google_PaLM_Logo.svg.png",
+  },
 ];
 
 export default models;
